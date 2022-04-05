@@ -1,0 +1,14 @@
+# Api test
+
+GET https://127.0.0.1:8000/user/1/
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/admin/core/
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/hello/waa
+Accept: text/plain
