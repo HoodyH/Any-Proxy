@@ -1,6 +1,5 @@
 import os
 import requests
-import uvicorn
 from fastapi import FastAPI
 
 BASE_URL = os.getenv("BASE_URL")
@@ -17,7 +16,3 @@ async def proxy(url_path: str):
         return res.content
 
     return {"success": False, "errors": ["request failed", f"status code: {res.status_code}"]}
-
-
-if __name__ == '__main__':
-    uvicorn.run(app)
